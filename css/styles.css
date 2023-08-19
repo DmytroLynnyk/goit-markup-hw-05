@@ -347,20 +347,20 @@ header {
   height: 40px;
 }
 
+.subscribe-box {
+}
+
 .email-box {
-  color: var(--white, #fff);
+  color: var(--white);
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 200% */
-  letter-spacing: 0.48px;
+  letter-spacing: 0.04em;
 
   background: var(--navyblue);
   border-radius: 4px;
   border: 1px solid var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-  height: inherit;
+  height: 40px;
   width: 264px;
   padding: 8px 16px;
 
@@ -750,6 +750,7 @@ header {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   background-color: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -766,7 +767,7 @@ header {
   color: var(--navyblue);
   display: block;
   text-align: center;
-  margin: 72px auto 16px;
+  margin: 0 0 16px 0;
 }
 
 .modal-form-box {
@@ -858,7 +859,7 @@ input[type='checkbox']:checked + .policy-checkbox {
 }
 
 .order-form button {
-  margin: 24px auto;
+  margin: 24px 0 0 0;
 }
 
 .modal-button {

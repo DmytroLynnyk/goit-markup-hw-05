@@ -412,28 +412,31 @@
         <div class="subscribe">
           <p class="subscribe-title body-medium">Subscribe</p>
           <form class="subscribe-form" name="subscribe_form">
-            <input
-              class="email-box"
-              type="email"
-              name="subscriber_email"
-              placeholder="E-mail"
-            />
-            <button class="subscribe-btn button-text" type="submit">
-              Subscribe
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#subscribe-icon"></use>
-              </svg>
-            </button>
+            <label class="subscribe-box">
+              <input
+                class="email-box"
+                type="email"
+                name="subscriber_email"
+                placeholder="E-mail"
+              />
+              <button class="subscribe-btn button-text" type="submit">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#subscribe-icon"></use>
+                </svg>
+              </button>
+            </label>
           </form>
         </div>
       </div>
     </footer>
+
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <strong class="modal-title body-medium">
+        <p class="modal-title body-medium">
           Leave your contacts and we will call you back
-        </strong>
+        </p>
         <form class="order-form small-text" name="order-form">
           <label class="form-label" for="order_username"> Name </label>
           <div class="modal-form-box">
@@ -483,7 +486,6 @@
           <label class="form-label"> Comment </label>
           <textarea
             class="form-comment"
-            type="text"
             name="comment"
             rows="5"
             id="order_comment"
