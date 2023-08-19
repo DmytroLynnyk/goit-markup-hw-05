@@ -870,7 +870,7 @@ header {
     fill var(--animation);
 }
 
-.checkbox:checked + .policy-checkbox {
+.checkbox:checked + .policy-agreement .policy-checkbox {
   background-color: var(--iris);
   border: none;
   fill: var(--white);
