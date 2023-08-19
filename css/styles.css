@@ -871,9 +871,9 @@ header {
 }
 
 .checkbox:checked + .policy-agreement .policy-checkbox {
-  background-color: var(--iris);
+  background-color: var(--ocean);
   border: none;
-  fill: var(--white);
+  fill: var(--cloud);
 }
 
 .policy-checkbox-icon {
