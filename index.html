@@ -411,12 +411,12 @@
         <!-- Footer form -->
         <div class="subscribe">
           <p class="subscribe-title body-medium">Subscribe</p>
-          <form class="subscribe-form" name="subscribe_form">
+          <form class="subscribe-form" name="subscribe-form">
             <label class="subscribe-box">
               <input
                 class="email-box"
                 type="email"
-                name="subscriber_email"
+                name="subscriber-email"
                 placeholder="E-mail"
               />
             </label>
@@ -434,17 +434,22 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#modal-close"></use>
+          </svg>
+        </button>
         <p class="modal-title body-medium">
           Leave your contacts and we will call you back
         </p>
         <form class="order-form small-text" name="order-form">
-          <label class="form-label" for="order_username"> Name </label>
+          <label class="form-label" for="order-username"> Name </label>
           <div class="modal-form-box">
             <input
               class="modal-form-input"
               type="text"
               name="username"
-              id="order_username"
+              id="order-username"
               autofocus
               required
               minlength="3"
@@ -454,13 +459,13 @@
             </svg>
           </div>
 
-          <label class="form-label" for="order_phone"> Phone </label>
+          <label class="form-label" for="order-phone"> Phone </label>
           <div class="modal-form-box">
             <input
               class="modal-form-input"
               type="tel"
               name="phone"
-              id="order_phone"
+              id="order-phone"
               minlength="12"
               maxlength="12"
             />
@@ -475,7 +480,7 @@
               class="modal-form-input"
               type="email"
               name="email"
-              id="order_email"
+              id="order-email"
               required
             />
             <svg class="modal-form-icon" width="18" height="24">
@@ -488,7 +493,7 @@
             class="form-comment"
             name="comment"
             rows="5"
-            id="order_comment"
+            id="order-comment"
             placeholder="Text input"
           ></textarea>
 
@@ -512,12 +517,6 @@
 
           <button class="hero-button" type="submit">Send</button>
         </form>
-
-        <button class="modal-button" type="button" data-modal-close>
-          <svg class="modal-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#modal-close"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
