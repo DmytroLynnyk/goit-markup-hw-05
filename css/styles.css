@@ -763,6 +763,10 @@ header {
   color: var(--lightslate);
 }
 
+.order-form-item {
+  margin: 0 0 8px 0;
+}
+
 .modal-title {
   color: var(--navyblue);
   display: block;
@@ -772,7 +776,6 @@ header {
 
 .modal-form-box {
   position: relative;
-  margin: 0 0 8px 0;
 }
 
 .modal-form-input,
@@ -783,6 +786,7 @@ header {
 }
 
 .modal-form-input {
+  position: relative;
   padding: 10px 38px;
   outline: transparent;
   transition: border-color var(--animation);
