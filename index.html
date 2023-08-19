@@ -446,29 +446,25 @@
 
         <form class="order-form small-text" name="order-form">
           <div class="order-form-item">
-            <label class="form-label small-text" for="order-username">
-              Name
-            </label>
+            <label class="form-label small-text" for="user-name">Name</label>
             <div class="modal-form-box">
               <input
                 class="modal-form-input"
                 type="text"
-                name="username"
-                id="order-username"
+                name="user-name"
+                id="user-name"
                 autofocus
                 required
                 minlength="3"
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#username-icon"></use>
               </svg>
             </div>
           </div>
 
           <div class="order-form-item">
-            <label class="form-label small-text" for="order-phone">
-              Phone
-            </label>
+            <label class="form-label small-text" for="order-phone">Phone</label>
             <div class="modal-form-box">
               <input
                 class="modal-form-input"
@@ -485,7 +481,7 @@
           </div>
 
           <div class="order-form-item">
-            <label class="form-label small-text"> Email </label>
+            <label class="form-label small-text" for="order-email">Email</label>
             <div class="modal-form-box">
               <input
                 class="modal-form-input"
@@ -500,32 +496,39 @@
             </div>
           </div>
 
-          <label class="form-label small-text"> Comment </label>
-          <textarea
-            class="form-comment"
-            name="comment"
-            rows="5"
-            id="order-comment"
-            placeholder="Text input"
-          ></textarea>
+          <div class="comment">
+            <label class="form-label small-text" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="form-comment small-text"
+              name="user-comment"
+              id="user-comment"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
-          <label class="policy">
+          <div class="policy">
             <input
               class="visually-hidden"
               type="checkbox"
-              name="policy"
-              value="yes"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <span class="policy-checkbox">
-              <svg class="policy-checkbox-icon" width="16" height="16">
-                <use href="./images/icons.svg#checkbox-icon"></use>
-              </svg>
-            </span>
-            <span class="policy-text small-text">
-              I accept the terms and conditions of the
-              <a href="" class="policy-link link-text">Privacy Policy</a>
-            </span>
-          </label>
+            <label class="policy-agreement small-text" for="user-privacy">
+              <span class="policy-checkbox">
+                <svg class="policy-checkbox-icon" width="16" height="16">
+                  <use href="./images/icons.svg#checkbox-icon"></use>
+                </svg>
+              </span>
+              <span class="policy-text">
+                I accept the terms and conditions of the
+                <a href="" class="policy-link link-text">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
 
           <button class="hero-button" type="submit">Send</button>
         </form>
