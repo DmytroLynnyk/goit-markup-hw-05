@@ -424,6 +424,8 @@ header {
 .hero-button {
   color: var(--white);
   background-color: var(--iris);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   text-align: center;
   min-width: 169px;
@@ -431,7 +433,6 @@ header {
   margin: 0 auto;
   padding: 16px 32px;
 
-  border-radius: 4px;
   transition: background-color var(--animation);
 }
 
@@ -770,18 +771,39 @@ header {
 
 .modal-form-box {
   position: relative;
-}
-
-.modal-form-input {
-  width: 100%;
-  padding: 10px 38px;
   margin: 0 0 8px 0;
 }
 
+.modal-form-input,
+.form-comment {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+}
+
+.modal-form-input {
+  padding: 10px 38px;
+  outline: transparent;
+  transition: border-color var(--animation);
+}
+
+.modal-form-input:focus {
+  border-color: var(--iris);
+}
+
 .modal-form-icon {
+  fill: var(--navyblue);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: fill var(--animation);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--iris);
 }
 
 .form-label {
@@ -790,10 +812,6 @@ header {
 }
 
 .form-comment {
-  font: inherit;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid var(--navyblue);
   resize: none;
   padding: 10px 16px;
   margin: 0 0 16px 0;
@@ -803,12 +821,33 @@ header {
   color: var(--navyblue-modal);
 }
 
-.policy-checkbox {
-  /* margin: 0 0 24px 0; */
+.policy {
 }
 
-.policy {
-  margin: 0 0 24px 0;
+.policy-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--navyblue-modal);
+  border-radius: 2px;
+  margin: 0 8px 0 0;
+
+  transition: background-color var(--animation), border-color var(--animation),
+    color var(--animation);
+}
+
+input[type='checkbox']:checked + .policy-checkbox {
+  background-color: var(--iris);
+  border-color: var(--iris);
+  color: var(--white);
+}
+
+.policy-checkbox-icon {
+  fill: currentColor;
 }
 
 .policy-text {
@@ -816,6 +855,10 @@ header {
 
 .policy-link {
   color: var(--iris);
+}
+
+.order-form button {
+  margin: 24px auto;
 }
 
 .modal-button {
