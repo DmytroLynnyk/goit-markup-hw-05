@@ -850,7 +850,8 @@ header {
 }
 
 .policy-agreement {
-  display: block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .policy-checkbox {
